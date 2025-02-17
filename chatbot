@@ -1,0 +1,38 @@
+def chatbot_respond(user_input):
+    responses = {
+        "hello": "Hello! How can I help you today?",
+        "what is your name": "I am your friendly chatbot.",
+        "what do you do": "I am here to assist you with basic information.",
+        "how are you": "I'm doing great, thanks for asking!",
+        "bye": "Goodbye! Have a great day!"
+    }
+    
+    # Convert the input to lowercase to handle case insensitivity
+    user_input = user_input.lower().strip()
+    
+    # Check if the user input matches a predefined question/command
+    if user_input in responses:
+        return responses[user_input]
+    else:
+        return "Sorry, I don't understand that. Can you ask something else?"
+
+# Function to start the chatbot conversation
+def start_chat():
+    print("Hi! I'm a chatbot. You can ask me basic questions. Type 'bye' to end the chat.")  # Greeting message
+    while True:
+        user
+        _input = input("You: ")
+        
+        # If the user types 'bye', exit the conversation
+        if user_input.lower() == 'bye':
+            print("Chatbot: Goodbye! Have a nice day!")
+            break
+        
+        # Get the response from the chatbot
+        response = chatbot_respond(user_input)
+        
+        # Print the chatbot's response
+        print("Chatbot:", response)
+
+# Start the chat
+start_chat()
